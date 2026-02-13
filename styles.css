@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #ece7df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.controls {
+    margin-bottom: 25px;
+}
+
+select, button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #b8a88a;
+    background-color: #f5ecd9;
+}
+
+button {
+    cursor: pointer;
+}
+
+.postcard {
+    width: 900px;
+    height: 500px;
+    background-color: #f5ecd9;
+    border: 2px solid #c4b28f;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.15);
+    display: flex;
+    position: relative;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#messagePreview {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.divider {
+    width: 1px;
+    background-color: #c4b28f;
+}
+
+.right h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+#namePreview {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.address-lines {
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.stamp {
+    width: 110px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.inputs {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+textarea, input {
+    padding: 10px;
+    font-size: 14px;
+    width: 350px;
+    border: 1px solid #b8a88a;
+    border-radius: 4px;
+}

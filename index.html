@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vintage Postcard Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Create Your Vintage Postcard</h1>
+
+    <div class="controls">
+        <select id="fontSelect">
+            <option value="'Playfair Display', serif">Classic Serif</option>
+            <option value="'Great Vibes', cursive">Handwritten</option>
+            <option value="'Montserrat', sans-serif">Modern</option>
+        </select>
+
+        <select id="stampSelect">
+            <option value="stamp1.jpg">Stamp 1</option>
+            <option value="stamp2.jpg">Stamp 2</option>
+            <option value="stamp3.jpg">Stamp 3</option>
+        </select>
+
+        <button onclick="downloadPNG()">Download as PNG</button>
+
+    </div>
+
+    <div class="postcard" id="postcard">
+        <div class="left">
+            <div id="messagePreview">Your message appears here...</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="right">
+            <h2>POST CARD</h2>
+            <p>To:</p>
+            <div id="namePreview">Recipient Name</div>
+            <div class="address-lines">
+                ______________________<br>
+                ______________________<br>
+                ______________________
+            </div>
+            <img id="stampPreview" src="assets/stamps/stamp1.png" class="stamp">
+        </div>
+    </div>
+
+    <div class="inputs">
+        <textarea id="messageInput" placeholder="Write your message..."></textarea>
+        <input type="text" id="nameInput" placeholder="Enter recipient name">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
